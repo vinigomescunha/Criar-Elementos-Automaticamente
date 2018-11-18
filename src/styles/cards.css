@@ -1,0 +1,462 @@
+.cardlist-relative {
+  position: relative;
+  width: 100%
+}
+
+body {
+  background-image: url('/images/selva.jpg');
+  background-color: #333333;
+  overflow-x: hidden;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  width: 90% !important;
+}
+
+.flip-container {
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -ms-perspective: 1000;
+  perspective: 1000;
+  -ms-transform: perspective(1000px);
+  -moz-transform: perspective(1000px);
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  border: 1px solid #ccc;
+  position: absolute;
+  margin-top: 5vh !important;
+}
+
+.first {
+  left: 0;
+  top: 0;
+  -webkit-animation: myfirst 3s 1;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-direction: normal;
+  /* Safari 4.0 - 8.0 */
+  animation: myfirst 3s 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.second {
+  right: 0;
+  top: 0;
+  -webkit-animation: mysecond 3s 1;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-direction: normal;
+  /* Safari 4.0 - 8.0 */
+  animation: mysecond 3s 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.card-action a {
+  word-wrap: break-word;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes myfirst {
+  0% {
+    background: red;
+    left: calc(0% - 320px);
+  }
+
+  25% {
+    background: yellow;
+    left: calc(25% - 320px);
+  }
+
+  50% {
+    background: blue;
+    left: calc(50% - 320px)
+  }
+
+  75% {
+    background: green;
+    left: calc(75% - 320px)
+  }
+
+  100% {
+    background: red;
+    left: calc(100% - 320px);
+  }
+}
+
+@keyframes myfirst {
+  0% {
+    background: red;
+    left: calc(0% - 320px);
+  }
+
+  25% {
+    background: yellow;
+    left: calc(25% - 320px);
+  }
+
+  50% {
+    background: blue;
+    left: calc(50% - 320px)
+  }
+
+  75% {
+    background: green;
+    left: calc(75% - 320px)
+  }
+
+  100% {
+    background: red;
+    left: calc(100% - 320px);
+  }
+}
+
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mysecond {
+  0% {
+    background: yellow;
+    right: calc(0% - 320px);
+  }
+
+  25% {
+    background: green;
+    right: calc(25% - 320px);
+  }
+
+  50% {
+    background: red;
+    right: calc(50% - 320px)
+  }
+
+  75% {
+    background: blue;
+    right: calc(75% - 320px)
+  }
+
+  100% {
+    background: yellow;
+    right: calc(100% - 320px);
+  }
+}
+
+@keyframes mysecond {
+  0% {
+    background: yellow;
+    right: calc(0% - 320px);
+  }
+
+  25% {
+    background: green;
+    right: calc(25% - 320px);
+  }
+
+  50% {
+    background: red;
+    right: calc(50% - 320px)
+  }
+
+  75% {
+    background: blue;
+    right: calc(75% - 320px)
+  }
+
+  100% {
+    background: yellow;
+    right: calc(100% - 320px);
+  }
+}
+
+@media only screen and (max-width: 640px) {
+
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes myfirst {
+    0% {
+      background: red;
+      left: calc(0% - 50%);
+    }
+
+    25% {
+      background: yellow;
+      left: calc(25% - 50%);
+    }
+
+    50% {
+      background: blue;
+      left: calc(50% - 50%)
+    }
+
+    75% {
+      background: green;
+      left: calc(75% - 50%)
+    }
+
+    100% {
+      background: red;
+      left: calc(100% - 50%);
+    }
+  }
+
+  @keyframes myfirst {
+    0% {
+      background: red;
+      left: calc(0% - 50%);
+    }
+
+    25% {
+      background: yellow;
+      left: calc(25% - 50%);
+    }
+
+    50% {
+      background: blue;
+      left: calc(50% - 50%)
+    }
+
+    75% {
+      background: green;
+      left: calc(75% - 50%)
+    }
+
+    100% {
+      background: red;
+      left: calc(100% - 50%);
+    }
+  }
+
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes mysecond {
+    0% {
+      background: yellow;
+      right: calc(0% - 50%);
+    }
+
+    25% {
+      background: green;
+      right: calc(25% - 50%);
+    }
+
+    50% {
+      background: red;
+      right: calc(50% - 50%)
+    }
+
+    75% {
+      background: blue;
+      right: calc(75% - 50%)
+    }
+
+    100% {
+      background: yellow;
+      right: calc(100% - 50%);
+    }
+  }
+
+  @keyframes mysecond {
+    0% {
+      background: yellow;
+      right: calc(0% - 50%);
+    }
+
+    25% {
+      background: green;
+      right: calc(25% - 50%);
+    }
+
+    50% {
+      background: red;
+      right: calc(50% - 50%)
+    }
+
+    75% {
+      background: blue;
+      right: calc(75% - 50%)
+    }
+
+    100% {
+      background: yellow;
+      right: calc(100% - 50%);
+    }
+  }
+
+  .flip-container,
+  .front,
+  .back {
+    max-width: 50vw !important;
+    max-height: 100vh !important;
+  }
+}
+
+.flip-container {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.flip-container:hover .back {
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+}
+
+.flip-container:hover .front {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.flip-container,
+.front,
+.back {
+  max-width: 320px;
+  max-height: 427px;
+  width: 100%;
+  min-height: 70vh !important;
+}
+
+.flipper {
+  -webkit-transition: 0.6s;
+  -webkit-transform-style: preserve-3d;
+  -ms-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -moz-transform: perspective(1000px);
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.front,
+.back {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: 0.6s;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transform: rotateY(0deg);
+  -moz-transition: 0.6s;
+  -moz-transform-style: preserve-3d;
+  -moz-transform: rotateY(0deg);
+  -o-transition: 0.6s;
+  -o-transform-style: preserve-3d;
+  -o-transform: rotateY(0deg);
+  -ms-transition: 0.6s;
+  -ms-transform-style: preserve-3d;
+  -ms-transform: rotateY(0deg);
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
+  position: absolute !important;
+  top: 0;
+  left: 0;
+}
+
+.front {
+  -webkit-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  z-index: 2;
+}
+
+.first .front {
+  background: lightgreen;
+}
+
+.first .back {
+  background: lightblue;
+}
+
+.second .front {
+  background: magenta;
+}
+
+.second .back {
+  background: white;
+}
+
+.back {
+  -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-180deg);
+  -o-transform: rotateY(-180deg);
+  -ms-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+}
+
+.menu {
+  display: inline;
+}
+
+.menu li {
+  display: inline-block;
+  padding: 1vw 4vw;
+}
+
+.menu li:nth-child(odd) {
+  background-color: #333;
+}
+
+.menu li:nth-child(even) {
+  background-color: #666;
+}
+
+.menu li a {
+  color: #fff;
+}
+
+.card-edit {
+  background: #fff;
+  padding: 2vw;
+  max-width: 50%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.custom-header-title {
+  background-color: #000;
+  line-height: 100%;
+  margin: 0;
+  padding: 2vw;
+  color: white;
+}
+
+.accordion-item input.accordion-radio {
+  display: none !important;
+}
+
+.accordion-item label {
+  background: #000000;
+  padding: 1rem;
+  opacity: 1 !important;
+  position: static !important;
+  display: block !important;
+  pointer-events: auto !important;
+  cursor: pointer;
+  border-style: solid;
+  border-color: #444;
+  border-width: 1px 2px;
+}
+
+.accordion-content {
+  height: 0px;
+  overflow: hidden;
+  -webkit-transition: height 2s ease-in-out;
+  -moz-transition: height 2s ease-in-out;
+  -o-transition: height 2s ease-in-out;
+  -ms-transition: height 2s ease-in-out;
+  transition: height 2s ease-in-out;
+}
+
+[id^=accordion-radio]:checked~.accordion-content {
+  height: auto;
+}
+
+.card-panel {
+  overflow-y: auto;
+}
